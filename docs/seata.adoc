@@ -124,7 +124,7 @@ docker pull seataio/seata-server:1.0.0
 docker run -d \
         -p 8091:8091 \
         -e SEATA_CONFIG_NAME=file:/root/seata-config/registry \
-        -v /PATH/TO/CONFIG_FILE:/root/seata-config  \
+        -v /apps/seata/config:/root/seata-config  \
         --name seata \
         --restart always \
         seataio/seata-server:1.0.0
